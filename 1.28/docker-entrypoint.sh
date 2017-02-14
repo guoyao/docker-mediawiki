@@ -81,4 +81,7 @@ chown -R www-data: .
 
 export MEDIAWIKI_SITE_NAME MEDIAWIKI_DB_HOST MEDIAWIKI_DB_USER MEDIAWIKI_DB_PASSWORD MEDIAWIKI_DB_NAME
 
+# clean
+rm -f /var/www/html/mediawiki.tar.gz /var/www/html/mediawiki.tar.gz.sig
+
 exec "$@"
